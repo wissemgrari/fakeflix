@@ -1,0 +1,58 @@
+.feed {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(../../assets/img/home3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+.description {
+  max-width: 480px;
+}
+.description h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  font-size: 1.2rem;
+}
+
+.description svg {
+  width: 2rem;
+  fill: #000;
+}
+
+.outline {
+  color: #fff;
+  background: rgba(109, 109, 110, 0.7);
+}
+
+.outline svg {
+  width: 2rem;
+  fill: none;
+}
+
+.actions {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}

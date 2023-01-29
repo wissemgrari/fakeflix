@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  font-size: 0.9rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.logo {
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+header svg {
+  width: 25px;
+  color: var(--text-color);
+}
