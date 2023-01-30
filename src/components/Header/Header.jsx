@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 
 import {
@@ -8,8 +8,18 @@ import {
 } from '@heroicons/react/24/outline';
 
 const Header = () => {
+  const [scroll, setScroll] = useState(false);
+
+  const onScroll = () => {
+    setScroll(window.scrollY > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <header>
+    <header className={scroll ? styles.sticky : null}>
       <div className={styles.left}>
         <a href='#' className={styles.logo}>
           FakeFlix
